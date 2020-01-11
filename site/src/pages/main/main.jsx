@@ -2,7 +2,21 @@ import React, { Component, Fragment } from "react";
 import {BrowserRouter as Router, Route } from 'react-router-dom'
 import { MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBNavLink, MDBNavbarToggler, MDBCollapse, MDBMask,
 MDBRow, MDBCol, MDBIcon, MDBBtn, MDBView, MDBContainer } from "mdbreact";
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 
+const SmoothScroll = () => (
+    <div>
+      <AnchorLink offset = '100' href='#things'>Things</AnchorLink>
+      <AnchorLink href='#stuff'>Stuff</AnchorLink>
+   
+      <section style={{ position: "absolute", top: "222%" }}id='things'>
+        <h2>Things</h2>
+      </section>
+      <section id='stuff'>
+        <h2>Stuff</h2>
+      </section>
+    </div>
+  )
 
 class Main extends Component { 
     constructor(props){
@@ -33,6 +47,8 @@ render() {
           
       </div>
       } />
+
+      <SmoothScroll></SmoothScroll>
 
   <MDBView>
               
