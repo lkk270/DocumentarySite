@@ -1,0 +1,12 @@
+.carousel-item {
+    height: 80%;
+  
+  }
+  
+.carousel-item img {
+    height: auto;
+    width: auto;
+    max-height: 650px;
+   
+    
+  }
