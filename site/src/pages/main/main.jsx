@@ -44,6 +44,7 @@ render() {
   <div id="sidenav-overlay" style={{ backgroundColor: "transparent" }} onClick={this.toggleCollapse("navbarCollapse")} />
   );
 
+  
 
   return (
     
