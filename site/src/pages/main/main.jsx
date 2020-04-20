@@ -9,6 +9,7 @@ import { CarouselItem } from '../../components/carousel'
 import "../../styles/navBar.css";
 import NavbarItem from "../../components/navBar";
 import Section from "../../components/section";
+import Collage from "../../components/collage"
 const SmoothScroll = () => (
     <div>
       <AnchorLink offset = '100' href='#things'>Things</AnchorLink>
@@ -56,19 +57,24 @@ render() {
       } />
          <div className="App">
         <NavbarItem />
-        <CarouselItem/>
+        {/* <CarouselItem/> */}
+        {/* // <Collage/>  */} 
         <Section
           title="Section 1"
           subtitle={'sfsafasfasdfasdffafsdfasdfsad'}
           dark={true}
           id="section1"
+          component = {"carousel"}
         />
+         
         <Section
           title="Section 2"
           subtitle={'sfsafasfasdfasdffafsdfasdfsad'}
           dark={false}
           id="section2"
-        />
+          component = {"c"}
+        /> 
+        
         <Section
           title="Section 3"
           subtitle={'sfsafasfasdfasdffafsdfasdfsad'}
@@ -88,6 +94,7 @@ render() {
           id="section5"
         />
       </div>
+      
         {/* <NavBar activeAbout = {false} activeContact = {false}/>  */}
         
       
