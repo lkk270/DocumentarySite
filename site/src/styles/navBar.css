@@ -32,7 +32,7 @@
     top: 10%; */
     /* padding-top: 5px; */
     position: absolute;
-    top: 50%;
+    top: 25%;
     display: inline-flex;
   } 
 
@@ -41,15 +41,13 @@
     /* display: inline-flex; */
    
   }
-  .icons .instagram{
-    margin-top: -30px;
-    margin-left: auto;
+.instagram{
+    
     max-width: 24px;
     max-height: 24px;
   }
-  .icons .flickr{
-    margin-top: -30px;
-    margin-left: auto;
+  .flickr{
+
     max-width: 40px;
     max-height: 40px;
   }

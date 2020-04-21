@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 // import { Link } from 'react-router-dom';
 import { Link, animateScroll as scroll } from "react-scroll";
+import Socials from "../components/socials"
 
 
 class NavbarItem extends Component {
@@ -33,10 +34,7 @@ class NavbarItem extends Component {
         <div className = "name-header">
         <a className="navbar-brand" href="/">Enduring Steward</a>
         <div className = "icons" >
-            <a target="_blank" href = "https://www.instagram.com/enduringstewards/"><img src={require("../images/instagram.png")} className = "instagram"/></a>
-            <a target="_blank" href = "https://www.flickr.com/photos/148106969@N04/albums"><img src={require("../images/flickr.png")} className = "flickr"/></a>
-            <a target="_blank" href = "https://www.youtube.com"><img src={require("../images/youtube.png")} className = "instagram"/></a>
-
+         <Socials/>
             </div>
           </div>
           <button onClick={this.toggleNavbar} className={`${classTwo}`} type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -66,7 +64,7 @@ class NavbarItem extends Component {
                 smooth={true} 
                 // className="nav-link" 
                 to="section2"
-                offset={-1250}
+                offset={-1400}
                 duration={500}
                 activeClass="active"
                  >Pictures</Link>
@@ -77,7 +75,7 @@ class NavbarItem extends Component {
                 smooth={true} 
                 // className="nav-link" 
                 to="section3"
-                offset={-290}
+                offset={-820}
                 duration={500}
                 activeClass="active"
                  >Videos</Link>
@@ -88,7 +86,7 @@ class NavbarItem extends Component {
                 smooth={true} 
                 // className="nav-link" 
                 to="section4"
-                offset={-1250}
+                offset={-650}
                 duration={500}
                 activeClass="active"
                  >About</Link>
@@ -99,7 +97,7 @@ class NavbarItem extends Component {
                 smooth={true} 
                 // className="nav-link" 
                 to="section5"
-                offset={-1250}
+                offset={-300}
                 duration={500}
                 activeClass="active"
                  >Contact</Link>

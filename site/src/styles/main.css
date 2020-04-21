@@ -1,0 +1,32 @@
+.bullets{
+    width: 100%;
+}
+.bullets .socials{
+    /* position: relative;
+    top: 10%; */
+    /* padding-top: 5px; */
+    position: absolute;
+    display: inline-flex;
+    left: 270px;
+    
+   
+  } 
+
+.bullets .socials img{
+    padding-left: 10px;
+    display: inline-flex;
+   
+  }
+
+  .about{
+      padding-left: 100px;
+      padding-right: 100px;
+  }
+
+  .video{
+   align-self: center;
+  }
+
+  form {
+      padding-bottom: 80px;
+  }

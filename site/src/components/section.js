@@ -2,6 +2,9 @@
 import React, { Component } from "react";
 import Collage from "../components/collage"
 import {CarouselItem} from "../components/carousel"
+import Video from "../components/video"
+import About from "../components/about"
+import ContactForm from "../components/contact"
 
 // function Section({ title, subtitle, dark, id }) {
 //   return (
@@ -14,14 +17,19 @@ import {CarouselItem} from "../components/carousel"
       return (
         // <div className={"section" + (this.props.dark ? "-top" : "")}>
            <div className="section">
+              <h1 style = {{"textAlign": "center"}}>{this.props.title}</h1>
             {this.props.component === "carousel" ? <CarouselItem/> : ""}
-             {this.props.component === "c" ? <Collage/> : ""}
+             {this.props.component === "collage" ? <Collage/> : ""}
+             {this.props.component === "about" ? <About/> : ""}
+             {this.props.component === "video" ? <Video/> : ""}
+             {this.props.component === "contact" ? <ContactForm/> : ""}
+             
         <div className="section-content" id={this.props.id}>
        
             
             {/* {this.props.component === "carousel" ? <CarouselItem/> : ""} */}
-          {/* <h1>{title}</h1>
-          <p>{subtitle}</p> */}
+         
+          {/* <p>{subtitle}</p> */} 
           
         </div>
       </div>

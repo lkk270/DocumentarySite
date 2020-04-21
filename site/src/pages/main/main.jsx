@@ -5,12 +5,14 @@ import {BrowserRouter as Router, Route } from 'react-router-dom'
 import {MDBView} from "mdbreact";
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 // import { NavBar } from '../../components/navBar'
-import { CarouselItem } from '../../components/carousel'
+// import { CarouselItem } from '../../components/carousel'
 import "../../styles/navBar.css";
 import NavbarItem from "../../components/navBar";
 import Section from "../../components/section";
-import Collage from "../../components/collage"
-var {instagram} = require( "../../images/e.jpg");
+// import Collage from "../../components/collage"
+// var {instagram} = require( "../../images/e.jpg");
+import Socials from "../../components/socials"
+import "../../styles/main.css"
 
 const SmoothScroll = () => (
     <div>
@@ -62,7 +64,7 @@ render() {
         {/* <CarouselItem/> */}
         {/* // <Collage/>  */} 
         <Section
-          title="Section 1"
+          title=""
           // subtitle={'sfsafasfasdfasdffafsdfasdfsad'}
           dark={true}
           id="section1"
@@ -70,31 +72,33 @@ render() {
         />
          
         <Section
-          title="Section 2"
+          title="Pictures"
           // subtitle={'sfsafasfasdfasdffafsdfasdfsad'}
           dark={false}
           id="section2"
-          component = {"c"}
+          component = {"collage"}
         /> 
         
         <Section
-          title="Section 3"
+          title="Videos"
           // subtitle={'sfsafasfasdfasdffafsdfasdfsad'}
           dark={false}
           id="section3"
-          component = {"c"}
+          component = {"video"}
         />
         <Section
-          title="Section 4"
+          title="About"
           // subtitle={'sfsafasfasdfasdffafsdfasdfsad'}
           dark={false}
           id="section4"
+          component = {"about"}
         />
         <Section
-          title="Section 5"
+          title="Contact"
           // subtitle={'sfsafasfasdfasdffafsdfasdfsad'}
           dark={false}
           id="section5"
+          component = {"contact"}
         />
       </div>
       
@@ -105,11 +109,10 @@ render() {
   <MDBView>
             
           <div className = "bullets" id="info">
-              <h4 className="subtext-header mt-2 mb-4">
-              DOCUMENTARY WEBSITE 
-              </h4>
-              
-             
+              <h6 className="subtext-header mt-2 mb-4" style={{"position": "absolute", "left": "5%"}}>
+              © 2020 Enduring Stewards 
+              </h6>
+            <Socials/>
           </div>
        
       
