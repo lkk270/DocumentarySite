@@ -10,6 +10,8 @@ import "../../styles/navBar.css";
 import NavbarItem from "../../components/navBar";
 import Section from "../../components/section";
 import Collage from "../../components/collage"
+var {instagram} = require( "../../images/e.jpg");
+
 const SmoothScroll = () => (
     <div>
       <AnchorLink offset = '100' href='#things'>Things</AnchorLink>
@@ -61,7 +63,7 @@ render() {
         {/* // <Collage/>  */} 
         <Section
           title="Section 1"
-          subtitle={'sfsafasfasdfasdffafsdfasdfsad'}
+          // subtitle={'sfsafasfasdfasdffafsdfasdfsad'}
           dark={true}
           id="section1"
           component = {"carousel"}
@@ -69,7 +71,7 @@ render() {
          
         <Section
           title="Section 2"
-          subtitle={'sfsafasfasdfasdffafsdfasdfsad'}
+          // subtitle={'sfsafasfasdfasdffafsdfasdfsad'}
           dark={false}
           id="section2"
           component = {"c"}
@@ -77,20 +79,21 @@ render() {
         
         <Section
           title="Section 3"
-          subtitle={'sfsafasfasdfasdffafsdfasdfsad'}
-          dark={true}
+          // subtitle={'sfsafasfasdfasdffafsdfasdfsad'}
+          dark={false}
           id="section3"
+          component = {"c"}
         />
         <Section
           title="Section 4"
-          subtitle={'sfsafasfasdfasdffafsdfasdfsad'}
+          // subtitle={'sfsafasfasdfasdffafsdfasdfsad'}
           dark={false}
           id="section4"
         />
         <Section
           title="Section 5"
-          subtitle={'sfsafasfasdfasdffafsdfasdfsad'}
-          dark={true}
+          // subtitle={'sfsafasfasdfasdffafsdfasdfsad'}
+          dark={false}
           id="section5"
         />
       </div>
@@ -105,6 +108,8 @@ render() {
               <h4 className="subtext-header mt-2 mb-4">
               DOCUMENTARY WEBSITE 
               </h4>
+              
+             
           </div>
        
       

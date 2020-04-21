@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 // import { Link } from 'react-router-dom';
 import { Link, animateScroll as scroll } from "react-scroll";
 
+
 class NavbarItem extends Component {
   constructor(props) {
     super(props);
@@ -23,17 +24,30 @@ class NavbarItem extends Component {
  render() {
   const collapsed = this.state.collapsed;
   const classOne = collapsed ? 'collapse navbar-collapse' : 'collapse navbar-collapse show';
-  const classTwo = collapsed ? 'navbar-toggler navbar-toggler-right collapsed' : 'navbar-toggler navbar-toggler-right';
+  const classTwo = collapsed ? 'navbar-toggler navbar-toggler-right collapsed bg-dark' : 'navbar-toggler navbar-toggler-right bg-dark';
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark transparent-nav fixed-top">
+    
+    <nav className="navbar navbar-expand-md navbar-dark bg-white transparent-nav fixed-top">
+      {/* <nav className="navbar navbar-expand-lg navbar-dark bg-white transparent-nav fixed-top"></nav> */}
       <div className="container">
-        <a className="navbar-brand" href="#">Enduring Steward</a>
+        <div className = "name-header">
+        <a className="navbar-brand" href="/">Enduring Steward</a>
+        <div className = "icons" >
+            <a target="_blank" href = "https://www.instagram.com/enduringstewards/"><img src={require("../images/instagram.png")} className = "instagram"/></a>
+            <a target="_blank" href = "https://www.flickr.com/photos/148106969@N04/albums"><img src={require("../images/flickr.png")} className = "flickr"/></a>
+            <a target="_blank" href = "https://www.youtube.com"><img src={require("../images/youtube.png")} className = "instagram"/></a>
+
+            </div>
+          </div>
           <button onClick={this.toggleNavbar} className={`${classTwo}`} type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon" />
           </button>
+       
+          
           <div className={`${classOne}`} id="navbarResponsive">
             <ul className="navbar-nav ml-auto">
               <li className="nav-item">
+             
               <Link 
                 // onSetActive = {true}
                 activeClass="active" 
@@ -90,9 +104,11 @@ class NavbarItem extends Component {
                 activeClass="active"
                  >Contact</Link>
               </li>
+              
             </ul>
           </div>
       </div>
+      {/* <img src = {instagram}></img> */}
     </nav>
     );
   }

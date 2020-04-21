@@ -12,7 +12,8 @@ import {CarouselItem} from "../components/carousel"
   class Section extends Component {
     render() {
       return (
-        <div className={"section" + (this.props.dark ? " section-dark" : "")}>
+        // <div className={"section" + (this.props.dark ? "-top" : "")}>
+           <div className="section">
             {this.props.component === "carousel" ? <CarouselItem/> : ""}
              {this.props.component === "c" ? <Collage/> : ""}
         <div className="section-content" id={this.props.id}>
