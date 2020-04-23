@@ -1,10 +1,10 @@
 
-.navbar-dark .nav-item{
+.navbar-light .nav-item{
     padding-left: 10px;
 }
-.navbar-dark .nav-item .active,
-.navbar-dark .nav-item a:focus,
-.navbar-dark .nav-item:hover a{
+.navbar-light .nav-item .active,
+.navbar-light .nav-item a:focus,
+.navbar-light .nav-item:hover a{
 
     color: rgb(113, 99, 241);
     cursor: pointer;
@@ -20,11 +20,13 @@
     color: white;
   }
    */
-  .section-content {
+  /* .section-content {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
-  }
+    
+  } */
+
 
 
   .icons{
@@ -58,8 +60,15 @@
     margin-bottom: 50%;
   } */
 
-  .navbar{
-    border-bottom:1px solid #000;
+
+  /* .navbar.navbar-expand-lg.navbar-dark .container{
+  
+    background:transparent;
+  } */
+
+  #nav1{
+    z-index: 1;
+    
   }
 .navbar .container .navbar-brand{
   color: black;
@@ -67,4 +76,5 @@
 .navbar .container .navbar-brand:hover{
   color: rgb(113, 99, 241);
 }
+
 

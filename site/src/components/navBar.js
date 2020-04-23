@@ -27,10 +27,9 @@ class NavbarItem extends Component {
   const classOne = collapsed ? 'collapse navbar-collapse' : 'collapse navbar-collapse show';
   const classTwo = collapsed ? 'navbar-toggler navbar-toggler-right collapsed bg-dark' : 'navbar-toggler navbar-toggler-right bg-dark';
   return (
-    
-    <nav className="navbar navbar-expand-md navbar-dark bg-white transparent-nav fixed-top">
+    <nav className="navbar navbar-expand-lg navbar-light" id="nav1">
       {/* <nav className="navbar navbar-expand-lg navbar-dark bg-white transparent-nav fixed-top"></nav> */}
-      <div className="container">
+      <div className="container" >
         <div className = "name-header">
         <a className="navbar-brand" href="/">Enduring Steward</a>
         <div className = "icons" >
