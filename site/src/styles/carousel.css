@@ -1,5 +1,6 @@
 .carousel-item {
     height: 80%;
+    width: 100%
    
   
   }
@@ -8,7 +9,12 @@
     height: auto;
     width: auto;
     max-height: 750px;
-   
+    min-width: 100%;
+    /* max-width: 100%;; */
    
     
+  }
+
+  .carousel-caption{
+    top: 50%;
   }

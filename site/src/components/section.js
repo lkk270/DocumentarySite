@@ -18,9 +18,9 @@ import BackgroundVideo from "../components/videoBackground"
       return (
         <div className={"section" + (this.props.dark ? "-top" : "")}>
            {/* <div className="section"> */}
-              <h1 style = {{"textAlign": "center"}}>{this.props.title}</h1>
+              {/* <h1 style = {{"textAlign": "center"}}>{this.props.title}</h1> */}
             {this.props.component === "carousel" ? <BackgroundVideo/> : ""}
-             {this.props.component === "collage" ? <Collage/> : ""}
+             {this.props.component === "collage" ? <CarouselItem/> : ""}
              {this.props.component === "about" ? <About/> : ""}
              {this.props.component === "video" ? <Video/> : ""}
              {this.props.component === "contact" ? <ContactForm/> : ""}
